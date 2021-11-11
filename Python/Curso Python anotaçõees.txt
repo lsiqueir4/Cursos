@@ -1,0 +1,301 @@
+!!!!!!!!!Curso Python!!!!!!!!!!!
+
+Algoritmo: Sequencia de passos
+
+Estrutura de dados: Regras que definem os tipos de dados e como se comportam
+
+Python 3.8: Extensões code Runner, Python Preview
+Visual Studios Code
+Anaconda > Jupyter
+
+ ------------------------------------------------------------------------------
+
+Programação orientada a Objeto - Classe x Obj
+
+Pilares da O.O: 
+- Herança ( relação "É UM", reusar códigos)
+- Polimorfismo (capacidade de substituir um objeto)
+- Encapsulamento (necessário conhecer apenas a interface, a parte interna é oculta)
+- Abstração (simplificar pro software)
+
+
+ ------------------------------------------------------------------------------
+!!!!!!!!!Jupyter!!!!!!!!!
+
+Ctrl+Enter: Executar
+
+Alt+Enter: Executar+nova linha
+
+D+D: Exclui nota
+
+Esc+L: Mostra linhas
+
+Esc+A: Cria nota antes // Esc+B: Cria nota depois
+
+1(ou M): Modo comando > Mark Down + Titulo
+Y: Volta para Python
+------------------------------------------------------------------------------
+!!!!!!!!!VS CODE!!!!!!!!!
+
+Sempre SALVAR antes de Executar
+
+Ctrl+Alt+N: Executa
+
+executar no terminal: python "caminho do arquivo"
+
+Ex. python fundamentos/area_circulo_v3.py
+
+Acessar função pelo terminal:
+
+arquivo.função()
+
+ou
+
+from arquivo import funcao
+
+---
+
+Acessar pasta pelo terminal: cd nome da pasta (cd.. para voltar)
+
+------------------------------------------------------------------------------
+!!!!!!!!!Tipos de Dados!!!!!!!!!
+
+Boolean: True/False
+
+Float: Numero real (Ex: 1,5) Int: Numero (Ex: 10)
+
+-----------------------------
+String: Texto livre dentro de aspas
+
+Cada caracter é indexado, pode ser acessado por []
+
+nome = texto
+nome[0] = t
+nome[1] = e
+nome[1:] = exto ( : pega um range)
+nome[-3:] = text ( - conta do final pro começo)
+nome[::2] = txo (pula de 2 em 2)
+nome[::-1] = otxet (inverte o texto)
+
+len = tamanho da string
+.lower = deixa em caixa baixa / .upper = deixa em caixa alta
+.split = quebra a string nos espaços em branco
+\ = muda o tipo de interpretação do proximo caracter (Ex: 'text \'texto ' = o \ não permite que o ' não fecha a string 
+\n quebra de linha
+\t tab
+-----------------------------
+Lista: Conjunto(equivalente a Array) (Ex: ([1,2,3,4])
+
+Estrutura indexada
+
+.append = inclui valor na lista
+.remove = remove valor da lista / del = remove elemento da lista
+.reverse = inverte valores
+.index = informa a posição do elemento
+
+-----------------------------
+Dicionario: Estrutura chave - Valor
+
+
+
+Ex:pessoa = {'nome':'Joao' , 'idade':22}
+pessoa
+pessoa ['nome']
+pessoa['idade]
+pessoa.keys()
+pessoa.values()
+pessoa.items()
+pessoa.get('idade')
+pessoa.pop('idade') - tras o valor e depois Exclui
+pessoa.update ({'idade':40 'sexo':'m'}) att Dicionario
+del pessoa ['curso'] - exclui do Dicionario
+pessoa.clear() - limpa o Dicionario
+
+-----------------------------
+Conjunto
+semelhante a lista, mas não aceita repetição, nao tem indexação, nao tem ordeção, não aceita repetição
+
+a = {1,2,3}
+
+c1 = {1,2}
+c2 = {2,3}
+c1.union(c2)
+c1.intersection(c2)
+c1.update(c2)
+c2 <= c1  - é subconjunto?
+c1 >= c2 - é superconjunto?
+-----------------------------
+Interpolação - Alterar valores na apresentação
+
+nome, idade = 'Ana', 30
+
+print ('nome: %s idade: %d' % (nome, idade)) - %s -> substitui string %d -> substitui inteiros %f -> substitui float #mais antiga
+print ('Nome: {0} Idade: {1}'.format(nome, idade)) #python < 3.6
+print (f'Nome: {Nome} Idade: {idade}') #versao >= 3.6
+-----------------------------
+Tupla
+
+Sequencia não mutável
+
+.count () = Conta a quantidade de elementos iguais
+ 
+tupla = tuple()
+
+extrair valores da tupla usar *, exemplo:
+valores = ("gui", 4)
+"nome{} idade {}".format(*valores) #vai extrair os valores de dentro da tupla para preencher a indexação 
+-----------------------------
+None: Nulo, ausencia de valores
+------------------------------------------------------------------------------
+!!!!!!!!!Operadores Aritmeticos!!!!!!!!! 
+
++: Soma
+-: Subtração
+*: Multiplicação
+**: Elevar
+/: Divisão
+//: Divisão(Resultado Inteiro)
+%: Modulo (Resto da divisão)
+
+!!!!!!!!!Operadores Relacionais!!!!!!!!!  
+
+Resposta é True ou False
+
+>: Maior >=: Maior ou Igual
+<: Menor <=: Menor ou Igual
+!=: Diferente
+==: Igual
+
+!!!!!!!!!Operadores de Atribuição!!!!!!!!!
+
+=: Atribuição (Exemplo: a = 3)
++=: Acrescentar valor (a += 5 é igual a: a = a + 5)
+
+outros Exemplos:
+-=
+*=
+/=
+%=
+**=
+//=
+
+!!!!!!!!!Outros Operadores!!!!!!!!!
+
+---Operadores de Membro---
+
+in = Pertence a
+também pode usar com not = not in
+
+---Operadores de Identidade---
+
+is
+também pode usar com not = is not
+
+!!!!!!!!!Operadores Lógicos!!!!!!!!!
+
+and  - Tabela verdade
+True - True = True
+True - False = False
+False - False = False
+
+or  - Tabela verdade
+True - True = True
+True - False = True
+False- False = False
+
+xor  - or exclusivo - Tabela Verdade
+
+True != True
+True != False
+False != True
+False != False
+
+Negação Logica (Unario)
+
+not true (1)
+not false (0)
+
+!!!!!!!!!Funções!!!!!!!!!
+
+abs = Valor absoluto
+type = Mostra o tipo do valor
+
+!!!!!!!!!Operadores Ternários!!!!!!!!!
+
+chovendo = True
+
+print ("Hoje estou com as roupas " + ("secas" , "molhadas") [chovendo])
+print ("hoje estou com as roupas " + ("molhadas" if chovendo else "secas."))
+
+else if = elif
+
+Exemplo
+
+nota =
+
+if nota>= 9:
+    print ("Quadro de Honra")
+elif nota >= 7:
+    print ("Aprovado")
+else:
+    print ("Reprovado")
+
+
+
+#################Exercicio OP Logico##################
+trabalho terça e quinta, se os dois dar certo = 50 apenas um = 32 (nos dois vai tomar sorvete), 
+se nenhum dar certo nao tem tv nem sorvete, tem saude
+
+Resposta:
+
+trabalho_terça = True
+trabalho_quinta = False
+sorvete = trabalho_quinta or trabalho_terça
+
+tv_50 = trabalho_terça and trabalho_quinta
+tv_32 = trabalho_terça != trabalho_quinta
+mais_saudavel = not sorvete
+
+print ("Tv50={} Tv32={} Sorvete={} Saudavel ={}" 
+.format (tv_50, tv_32, sorvete, mais_saudavel))
+
+########################################################
+
+Intensivao Python - Aula 1
+
+pyautogui - biblioteca de automação
+
+sempre que passar o local do arquivo, colocar r antes do texto, exemplo:
+
+tabela = pd.read_excel (r"C:\Users\Download\Tabela.xlsx")
+
+sempre q for subs valores dentro de um texto:
+
+texto = f" faturamento de {faturamento}, quantidade de {quantidade} #f para formatar, as chaves substituem o valor pela variavel informada'
+
+
+Intensivao Python - Aula 2
+
+Analise de dados
+1- importar a base de dados pro python
+2 - Visualizar base de dados
+3 - Tratar base de dados
+4 - Analise exploratória
+5 - Identificar causa do problema
+
+plotly - biblioteca de graficos
+
+
+Intensivao Python - Aula 3
+
+Usa Selenium - Uma das melhores ferramentas para automatização web
+1- baixar Selenium
+2- Instalar Webdrive,
+
+
+Passo 1- Entrar na net
+Passo 2- Pegar cotação Dolar
+Passo 3- Pegar Cotação Euro
+Passo 4- Pegar cotação Outros
+Passo 5- Importar e att a base de dados
+Passo 6- Exportar a base atualizada

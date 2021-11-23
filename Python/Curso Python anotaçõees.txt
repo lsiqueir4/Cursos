@@ -41,6 +41,8 @@ Sempre SALVAR antes de Executar
 
 Ctrl+Alt+N: Executa
 
+Ctrl+Alt+P: Clear
+
 executar no terminal: python "caminho do arquivo"
 
 Ex. python fundamentos/area_circulo_v3.py

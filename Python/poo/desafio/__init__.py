@@ -1,3 +1,5 @@
+#! python
+
 from .cliente import Cliente
 from .vendedor import Vendedor
 from .compra import Compra

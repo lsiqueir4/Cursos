@@ -5,10 +5,10 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
 
-    def __str__():
+    def __str__(self):
         if not self.idade:
             return self.nome
         return f'Nome: {self.nome} Idade: {self.idade}'
 
     def isAdult(self):
-        return True if self.idade >= MaiorIdade
+        return (self.idade or 0) > MaiorIdade

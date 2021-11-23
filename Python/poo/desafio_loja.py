@@ -1,3 +1,4 @@
+#! python
 from datetime import datetime
 from desafio import Compra, Vendedor, Cliente
 

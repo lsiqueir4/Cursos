@@ -1,5 +1,5 @@
 from datetime import datetime
-from desafio import Cliente, Vendedor, Compra
+from desafio import Compra, Vendedor, Cliente
 
 def main():
     cliente = Cliente('Maria Lima', 44)
@@ -16,5 +16,6 @@ def main():
     print (f'Total: {valor_total} em {qtde_compras} compras')
     print (f'Ultima compra:{cliente.get_data_ultima_compra()}')
 
-    if __name__ == '__main__':
-        main()
+
+if __name__ == '__main__':
+    main()

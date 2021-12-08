@@ -10,6 +10,27 @@ Anaconda > Jupyter
 
  ------------------------------------------------------------------------------
 
+PIP - Package Installer for Python
+
+pypi.org - site de pacotes
+
+pip install 'pacote'
+
+pip3 install --user 'pacote' - Instalar na pasta de usuário
+
+pip list - Listar os pacotes instalados
+
+pip freeze - lista todos os pacotes instalados na maquina
+
+pip list --outdated - listar bibliotecas desatualizadas
+
+arquivo requirements.txt - todas as bibliotecas para configurar o ambiente (pip install -r requirements.txt //para instalar bibliotecas do arquivo)
+
+.venv\Scripts\activate - Ativar ambiente virtual
+
+deactivate - Desativa ambiente virtual
+
+ ------------------------------------------------------------------------------
 Programação orientada a Objeto - Classe x Obj
 
 Pilares da O.O: 
@@ -17,7 +38,6 @@ Pilares da O.O:
 - Polimorfismo (capacidade de substituir um objeto)
 - Encapsulamento (necessário conhecer apenas a interface, a parte interna é oculta)
 - Abstração (simplificar pro software)
-
 
  ------------------------------------------------------------------------------
 !!!!!!!!!Jupyter!!!!!!!!!
@@ -97,8 +117,6 @@ Estrutura indexada
 
 -----------------------------
 Dicionario: Estrutura chave - Valor
-
-
 
 Ex:pessoa = {'nome':'Joao' , 'idade':22}
 pessoa

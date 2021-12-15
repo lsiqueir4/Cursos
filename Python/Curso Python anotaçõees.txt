@@ -84,7 +84,9 @@ Acessar pasta pelo terminal: cd nome da pasta (cd.. para voltar)
 
 Boolean: True/False
 
-Float: Numero real (Ex: 1,5) Int: Numero (Ex: 10)
+Float: Numero real (Ex: 1,5) 
+
+Int: Numero (Ex: 10)
 
 -----------------------------
 String: Texto livre dentro de aspas

@@ -17,5 +17,5 @@ def nova_conexao():
         yield conexao
     finally:
         if (conexao and conexao.is_connected()):
-            print('Finally...')
+            print('Conexao encerrada')
             conexao.close()

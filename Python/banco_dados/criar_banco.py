@@ -1,5 +1,5 @@
 try:
-    from mysql.connector import connect
+    from mysql import connect
 except:
     print ('BIBLIOTECA NAO INSTALADA')
 else:
@@ -14,4 +14,4 @@ conexao = connect(
 )
 
 cursor = conexao.cursor()
-cursor.execute('CREATE DATABASE agenda') #.execute executa um comando em sql
+cursor.execute('CREATE DATABASE agenda') #.execute executa um comando em sqls

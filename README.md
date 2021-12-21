@@ -21,4 +21,5 @@ Sou Leandro Siqueira, atualmente estudo Python e SQL com o objetivo de explorar 
 <br>
 <br>
 <br>
+
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lsiqueir4)](https://github.com/anuraghazra/github-readme-stats)

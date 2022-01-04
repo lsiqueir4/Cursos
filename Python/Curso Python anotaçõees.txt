@@ -79,6 +79,10 @@ from arquivo import funcao
 
 Acessar pasta pelo terminal: cd nome da pasta (cd.. para voltar)
 
+Limpar terminal: cls
+
+criar diretorio: mkdir
+
 ------------------------------------------------------------------------------
 !!!!!!!!!Tipos de Dados!!!!!!!!!
 

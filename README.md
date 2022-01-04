@@ -1,2 +1,3 @@
 # Cursos
- Repositorio de scripts de cursos
+
+Repositorio para scripts e arquivos referente aos cursos

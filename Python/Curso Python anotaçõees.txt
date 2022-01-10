@@ -26,6 +26,7 @@ pip list --outdated - listar bibliotecas desatualizadas
 
 arquivo requirements.txt - todas as bibliotecas para configurar o ambiente (pip install -r requirements.txt //para instalar bibliotecas do arquivo)
 
+python -m venv c:\path\to\myenv - criar venv
 .venv\Scripts\activate - Ativar ambiente virtual
 
 deactivate - Desativa ambiente virtual

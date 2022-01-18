@@ -22,6 +22,8 @@ pip list - Listar os pacotes instalados
 
 pip freeze - lista todos os pacotes instalados na maquina
 
+pip freeze > requiriments.txt(cria um requiriments com todas as libs instaladas)
+
 pip list --outdated - listar bibliotecas desatualizadas
 
 arquivo requirements.txt - todas as bibliotecas para configurar o ambiente (pip install -r requirements.txt //para instalar bibliotecas do arquivo)
